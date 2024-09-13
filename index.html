@@ -30,9 +30,47 @@
 
                 </header>
 
-                <h3 id="initial">Informações do Estudante</h3>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset class="stud-info">
+                        <legend>Informações do Estudante</legend>
+                        <div class="input-wrapper">
+                            <label for="full name">Nome Completo</label>
+                            <input id="full name" type="text" name="full-name" placeholder="Digite o nome completo do estudante">
+                        </div>
 
-                <form>
+                        <div class="input-wrapper">
+                            <label for="birth-date">Data de Nascimento</label>
+                            <input id="birth-date" type="date" name="birth-date" placeholder="Digite a data de nascimento do estudante">
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="gender">Gênero</label>
+                            <select name="gender" id="gender">
+                                <option value="male">Masculino</option>
+                                <option value="female">Feminino</option>
+                                <option value="tansexual">Trans</option>
+                                <option value="non-binary">Não binário</option>
+                                <option value="others">Outros</option>
+                                <option value="no answer">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações médicas adicionais<label>
+                            <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="Informações como alergias, cuidados especiais e histórico médico relevante."></textarea>     
+                        </div>
+                        
+                        <div class="droparea-wrapper">
+                            <label for="archives">Documentação</label>
+                            <input type="file" name="archives" id="archives">
+                            <img src="assets/icons/inter icons/cloud-upload.svg" alt=""> 
+                            <p>Clique aqui para <br>
+                            slecionar os arquivos</p>
+                        </div>
+                            
+                            
+            
+                    </fieldset>
 
                 </form>
             </div>
