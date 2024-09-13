@@ -3,6 +3,8 @@ body {
     padding: 0px;
     box-sizing: border-box;
     overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font: var(--text);
 }
 
 :root {
@@ -39,9 +41,13 @@ body {
     --text: 400 1rem/1.5 var(--font-family);
     --text-sm: 400 .875rem/1.4 var(--font-family);
     
-    --h1: 700 32px/120% var(--font-family);
+    --h1: 700 2rem/120% var(--font-family);
     --h2: 700 24px/120% var(--font-family);
     --h3: 700 20px/120% var(--font-family);
     --h4: 700 16px/120% var(--font-family);
 
+}
+
+img {
+    max-width: 100%;
 }
