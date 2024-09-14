@@ -1,3 +1,5 @@
+@import url(/fields/droparea.css);
+
 input, textarea, select {
     appearance: none;
     width: 100%;
@@ -50,5 +52,9 @@ input[type="date"] {
 select {
     background: url(/assets/icons/arrow-down-01.svg) no-repeat 97%;
 
+}
+
+textarea {
+    height: 6rem;
 }
 

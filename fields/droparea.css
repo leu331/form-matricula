@@ -1,0 +1,47 @@
+.droparea-wrapper {
+    width: 107%;
+}
+
+.dropzone {
+    border: 1px dashed var(--stroke-default);
+    border-radius: .3rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    gap: 0;
+    text-align: center;
+    position: relative;
+
+    & input {
+        position: absolute;
+        width: 100%;
+        height: 100;
+        inset: 0;
+        opacity: 0;
+    }
+
+    svg {
+        padding-top: 1.7rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    p {
+        color: #A8A29E;
+    }
+
+    &:hover, &:has(input:focus) {
+        border-width: 2px;
+        border-color: var(--stroke-highlight);
+        background-color: var(--surface-secondary);
+        color: var(--text-tertiary);
+
+        & svg path {
+            stroke: var(--stroke-highlight);
+        }
+    }
+
+}
+
+
