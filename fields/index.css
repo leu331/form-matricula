@@ -83,4 +83,35 @@ input {
     &[disabled] {
         background-color: var(--surface-disabled)
     }
+
+    &:invalid {
+        border: .125rem solid var(--semantic-error)
+    }
+
+    &[required] + .error {
+        
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            padding-top: .2rem;
+            color: var(--semantic-error);
+    }
+
+    &:not(:focus) :valid + .error {
+        display: none;
+    }
+    
 } 
+
+.input-wrapper {
+    small {
+        color: #78716c;
+        font: .9rem;
+        line-height: 1.4;
+        display: inline-block;
+        margin-top: .35rem;
+    }
+}  
+
+
+    
