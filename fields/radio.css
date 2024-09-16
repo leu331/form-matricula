@@ -118,12 +118,59 @@ label {
     }
 }
 
-/* .checkbox {
-    width: .05rem;
-    height: 2rem;
+.action-wrappers {  
+    all: unset;
+}
 
-} */
+.action-wrappers {
+display: flex;
+    gap: 1rem;
+  
+}
 
-/* .checkbox:hover {
-    border: 1px solid var();
-} */
+button {
+    &.btn-primary {
+        &:hover, &:focus {
+            background-color: var(--brand-mid);
+        }
+    }
+
+    &.btn-secondary {
+        &:hover, &:focus {
+            color: var(--brand-dark);
+            border: 1px solid var(--brand-dark);
+            outline: .25rem solid var(--surface-secondary);
+        }
+    }
+}
+
+button.btn-primary {
+    
+    background-color: var(--brand-dark);
+    border: 1px solid var(--brand-dark);
+    border-radius: .5rem;
+    color: #FFFFFF;
+    width: 10.875rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 530;
+    cursor: pointer;
+    
+}
+
+
+button.btn-secondary {
+    
+    background-color: var(--surface-primary);
+    border: 1px solid var(--text-highlight);
+    border-radius: .5rem;
+    color: var(--text-highlight);
+    width: 10.875rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 530;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
