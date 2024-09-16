@@ -1,7 +1,8 @@
 input, textarea, select {
     appearance: none;
     width: 100%;
-    border: 1px solid var(--stroke-default);
+    border: 2px solid transparent;
+    outline: 1px solid var(--stroke-default);
     border-radius: .3rem;
     padding: .75rem 1rem;
 
@@ -95,7 +96,7 @@ input {
             color: var(--semantic-error);
     }
 
-    &:not(:focus) :valid + .error {
+    &:valid + .error {
         display: none;
     }
     
